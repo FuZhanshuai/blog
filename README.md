@@ -1,2 +1,2 @@
 # blog
-Springboot个人博客系统
+SpringBoot个人博客系统
