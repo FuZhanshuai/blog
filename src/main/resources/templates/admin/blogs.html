@@ -37,11 +37,12 @@
             <i class="sidebar icon"></i>
         </a>
     </nav>
+    <!--二级菜单-->
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" class="item">发布</a>
-                <a href="#" class="teal active item">列表</a>  
+                <a href="#" th:href="@{/admin/blogs/input}" class="teal item">发布</a>
+                <a href="#" th:href="@{/admin/blogs/blogs}" class="teal active item">列表</a>
             </div>
         </div>
 
@@ -210,6 +211,7 @@
         }
 
         $("#search-btn").click(function () {
+            $("[name='page']").val(0);
             loaddata();
         });
         

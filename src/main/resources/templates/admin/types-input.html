@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- 导航栏 -->
+    <!--导航栏-->
     <nav th:replace="admin/_fragments :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
@@ -38,7 +38,7 @@
             <i class="sidebar icon"></i>
         </a>
     </nav>
-    <!-- 分类导航 -->
+    <!--二级菜单-->
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
@@ -49,7 +49,7 @@
 
     </div>
 
-    <!-- 中间内容 -->
+    <!--中间内容-->
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
             <form action="#" method="post" th:object="${type}" th:action="*{id}==null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
@@ -90,7 +90,7 @@
     <br>
     <br>
 
-    <!-- 底部footer -->
+    <!--底部footer-->
     <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
         <div class="ui center aligned container">
             <!-- 一共分为16份 -->
